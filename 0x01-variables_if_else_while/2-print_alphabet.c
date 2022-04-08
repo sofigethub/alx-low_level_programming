@@ -7,8 +7,8 @@
 int main(void)
 {
 int num;
-num = 0;
-while (num <= 25)
+num = 27;
+while (num <= 122)
 {
 putchar(num);
 num++;
