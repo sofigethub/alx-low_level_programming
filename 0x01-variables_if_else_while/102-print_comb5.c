@@ -20,10 +20,7 @@ putchar(q);
 putchar(' ');
 putchar(y);
 putchar(x);
-if (!(p == 57 &&
-q == 56 &&
-y == 57 &&
-x == 57))
+if (!(p == 57 && q == 56 && y == 57 && x == 57))
 {
 putchar(',');
 putchar(' ');
@@ -40,7 +37,7 @@ x = q + 1;
 p++;
 q = 48;
 y = p;
-x = q+ 1;
+x = q + 1;
 }
 putchar('\n');
 return (0);
