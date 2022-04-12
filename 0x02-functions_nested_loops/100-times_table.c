@@ -25,6 +25,8 @@ if (j < n)
 _putchar((k % 1000) + '0');
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar(' ');
 }
 else
 {
