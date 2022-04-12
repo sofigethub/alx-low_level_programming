@@ -27,7 +27,7 @@ _putchar(' ');
 }
 else if (n > 98)
 {
-for (i = i; i > 98; i--)
+for (i = n; i > 98; i--)
 {
 if (i >= 100)
 {
