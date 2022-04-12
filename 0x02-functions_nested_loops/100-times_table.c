@@ -22,13 +22,13 @@ for (j = 0; j <= n; j++)
 k= i * j;
 if (j < n)
 {
-_putchar('0');
+_putchar(i*j);
 _putchar(',');
 _putchar(' ');
 }
 else
 {
-_putchar(k);
+_putchar(i);
 }
 }
 _putchar('\n');
