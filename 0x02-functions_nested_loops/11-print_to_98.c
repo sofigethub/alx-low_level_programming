@@ -11,10 +11,18 @@ if (n <= 98 && n >= -100)
 {
 for (i = n; i <= 98; i++)
 {
+if (i == 98)
+{
+_putchar((i / 10) + '0');                           
+_putchar((i % 10) + '0');                      
+}
+else 
+{
 _putchar((i / 10) + '0');
 _putchar((i % 10) + '0');
 _putchar(',');
 _putchar(' ');
+}
 }
 }
 else if (n > 98)
