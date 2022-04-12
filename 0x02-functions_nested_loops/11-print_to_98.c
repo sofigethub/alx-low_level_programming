@@ -6,23 +6,34 @@
  */
 void print_to_98(int n)
 {
-if (n <= 98)
+if (n <= 98 && n >= -100)
 {
-for (n = n; n <= 98; n++)
+int i;
+for (i = n; i <= 98; i++)
 {
-_putchar((n / 10) + '0');
-_putchar((n % 10) + '0');
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
 _putchar(',');
 _putchar(' ');
 }
 }
-else
+else if (n > 98)
 {
-for (n = n; n > 98; n--)
+for (i = n; i > 98; n--)
 {
 _putchar((n / 100) + '0');                                       _putchar((n % 100) + '0');
 _putchar(',');                                                   
 _putchar(' ');
+}
+}
+else 
+{
+for (i = n; i <=98; i++)
+{
+_putchar((i / 100) + '0');                                
+_putchar((i % 100) + '0');                                
+_putchar(',');                                            
+_putchar(' ');                                            
 }
 }
 }
