@@ -22,9 +22,9 @@ for (j = 0; j <= n; j++)
 k= i * j;
 if (j < n)
 {
-_putchar(k);
+_putchar('0');
 _putchar(',');
-_putchar(' ');
+_putchar('  ');
 }
 else
 {
