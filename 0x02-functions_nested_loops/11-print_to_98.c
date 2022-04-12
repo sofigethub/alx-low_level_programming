@@ -1,68 +1,38 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * print_to_98 - print all natural numbers from n to 98.
  * @n: the number to start counting from n to 98
  * Return: Always 0.
  */
-void print_to_98(int n)
-{
-int i;
-if (n <= 98 && n >= -100)
-{
-for (i = n; i <= 98; i++)
-{
-if (i == 98)
-{
-_putchar((i / 10) + '0');                           
-_putchar((i % 10) + '0');                      
-}
-else 
-{
-_putchar((i / 10) + '0');
-_putchar((i % 10) + '0');
-_putchar(',');
-_putchar(' ');
-}
-}
-}
-else if (n > 98)
-{
-for (i = n; i > 98; i--)
-{
-if (i >= 100)
-{
-_putchar((i / 100) + '0'); 
-_putchar((i % 100) + '0');
-_putchar(',');                                      _putchar(' ');
-}
-else 
-{
-if (i == 98)                                        
-{                                                   
-_putchar((i / 10) + '0');                           
-_putchar((i % 10) + '0');                           
-}                                                   
-else                                                
-{                                                   
-_putchar((i / 10) + '0');                           
-_putchar((i % 10) + '0');                           
-_putchar(',');                                      
-_putchar(' ');                                      
-}
-}
-}
 
-}
-else 
+void print_to_98(int n)
+
 {
-for (i = n; i <=98; i++)
-{
-_putchar((i / 100) + '0');                                
-_putchar((i % 100) + '0');                                
-_putchar(',');                                            
-_putchar(' ');                                            
-}
-}
- _putchar('\n')
-;
+
+	if (n < 98)
+
+	{
+
+		for (n = n; n < 98; n++)
+
+			printf("%d, ", n);
+
+		printf("%d\n", 98);
+
+	}
+
+	else
+
+	{
+
+		for (n = n; n > 98; n--)
+
+			printf("%d, ", n);
+
+		printf("%d\n", 98);
+
+	}
+
 }
