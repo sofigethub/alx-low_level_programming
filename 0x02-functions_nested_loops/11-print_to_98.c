@@ -27,12 +27,31 @@ _putchar(' ');
 }
 else if (n > 98)
 {
-for (i = n; i > 98; n--)
+for (i = i; i > 98; i--)
 {
-_putchar((n / 100) + '0');                                       _putchar((n % 100) + '0');
-_putchar(',');                                                   
-_putchar(' ');
+if (i >= 100)
+{
+_putchar((i / 100) + '0'); 
+_putchar((i % 100) + '0');
+_putchar(',');                                      _putchar(' ');
 }
+else 
+{
+if (i == 98)                                        
+{                                                   
+_putchar((i / 10) + '0');                           
+_putchar((i % 10) + '0');                           
+}                                                   
+else                                                
+{                                                   
+_putchar((i / 10) + '0');                           
+_putchar((i % 10) + '0');                           
+_putchar(',');                                      
+_putchar(' ');                                      
+}
+}
+}
+
 }
 else 
 {
@@ -44,5 +63,6 @@ _putchar(',');
 _putchar(' ');                                            
 }
 }
- _putchar('\n');
+ _putchar('\n')
+;
 }
