@@ -24,7 +24,7 @@ if (j < n)
 {
 _putchar('0');
 _putchar(',');
-_putchar('  ');
+_putchar(' ');
 }
 else
 {
