@@ -15,6 +15,6 @@ return (write(1, &c, 1));
 
 int main(void)
 {
-_putchar ();
+putchar (_putchar);
 return (0);
 }
