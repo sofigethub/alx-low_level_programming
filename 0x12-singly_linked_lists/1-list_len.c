@@ -8,13 +8,14 @@
 
 size_t list_len(const list_t *h)
 {
-    size_t sofi;
+	const list_t *temp;
+	unsigned int sofi = 0;
 
-    sofi = 0;
-    while (h != NULL)
-    {
-        h = h->next;
-        sofi++;
-    }
-    return (sofi);
+	temp = h;
+	while (temp)
+	{
+		sofi++;
+		temp = temp->next;
+	}
+	return (sofi);
 }
