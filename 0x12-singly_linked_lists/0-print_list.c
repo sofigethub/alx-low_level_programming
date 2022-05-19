@@ -8,7 +8,7 @@
  */
 size_t print_list(const list_t *h)
 {
-size_t sofi = 0;
+size_t n = 0;
 
 while (h)
 {
@@ -17,8 +17,8 @@ printf("[0] (nil)\n");
 else
 printf("[%u] %s\n", h->len, h->str);
 h = h->next;
-sofi++;
+n++;
 }
 
-return (sofi);
+return (n);
 }
