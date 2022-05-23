@@ -5,16 +5,13 @@
  * @h: Pointer to a list.
  * Return: Integer.
  **/
-
 size_t listint_len(const listint_t *h)
 {
-    size_t ct = 0;
-
-    while (h)
-    {
-        ct++;
-        h = h->next;
-    }
-
-    return (ct);
+size_t ct = 0;
+while (h)
+{
+ct++;
+h = h->next;
+}
+return (ct);
 }
